@@ -223,12 +223,7 @@ const adventures = [
       }
 ];
 
-const getHealthyDinos = (keys) => {
-    const healthy = object.keys(dinoData).find((key) =>
-        dinoData[key].find((key) => key.health >= 75)
-        );
+/* const getHealthyDinos = () => { */
 
-        return getHealthyDinos;
-};
 
-export { dinoData, getHealthyDinos };
+export { dinoData };
