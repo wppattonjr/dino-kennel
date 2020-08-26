@@ -80,7 +80,7 @@ const dinoData = [
     },
 
     {id: 'dino9',
-    name: ,
+    name: 'Tink',
     type: 'Gallimimus',
     age: 67,
     owner: 'Logan',
@@ -223,11 +223,12 @@ const adventures = [
       }
 ];
 
-const getHealthyDinos = ()=> {
-    if()
-    return dinoData;
+const getHealthyDinos = (keys) => {
+    const healthy = object.keys(dinoData).find((key) =>
+        dinoData[key].find((key) => key.health >= 75)
+        );
+
+        return getHealthyDinos;
 };
 
-export { getHealthyDinos };
-
-
+export { dinoData, getHealthyDinos };

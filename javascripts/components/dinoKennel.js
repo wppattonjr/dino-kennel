@@ -1,20 +1,10 @@
-const buildDinoKennel = (array) => {
-    $('#dinoKennel').html('');
-    array.forEach((item, index) => { 
-        switch (names) {
-            case dinoData.health >= 75:
-                $('#cardsOfDinos')
-
-        }
-    })
-}
-
+import { dinoData } from './dinoData.js'
 
 const buildDinoCards = (array) => {
-    $('#cardsOfDinos').html('');
+    $('#healthyDinos').html('');
     array.forEach(dinos => {
-        $('#cardsOfDinos').append(
-            `div class="card" style="width: 18rem;">
+        $('#healthyDinos').append(
+            `<div class="card" style="width: 18rem;">
             <img src="${dinos.imageUrl}" class="card-img-top" alt="image of dino">
             <div class="card-body">
                 <h5>${dinos.name}</h5>
@@ -33,7 +23,8 @@ const buildDinoCards = (array) => {
                     </tr>`
         )
         
+    
     });
 }
 
-export { buildDinoCards };
+export { buildDinoCards }
