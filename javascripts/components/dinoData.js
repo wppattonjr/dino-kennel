@@ -1,4 +1,4 @@
-const dinos = [
+const dinoData = [
     {id: 'dino1',
     name: 'Fluffy',
     type: 'T Rex',
@@ -168,7 +168,7 @@ const dinos = [
     health: 100,
     imageUrl: 'assets/images/Triceratops.png'
     },
-]
+];
 
 const adventures = [
     {
@@ -221,7 +221,13 @@ const adventures = [
         title: 'LARPing',
         healthHit: 60
       }
-]
+];
 
+const getHealthyDinos = ()=> {
+    if()
+    return dinoData;
+};
+
+export { getHealthyDinos };
 
 
