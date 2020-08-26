@@ -1,1 +1,14 @@
-body {background-color: whitesmoke;};
+body {background-color: whitesmoke;
+};
+
+.dinoKenel {
+    background-color: white;
+};
+
+.dinoHospital {
+    background-color: darkgrey;
+};
+
+.dinoGraveyard {
+    background-color: black;
+}
