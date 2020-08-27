@@ -1,4 +1,4 @@
-import { dinoData } from './dinoData.js'
+import { getDinos } from './dinoData.js'
 
 const buildDinoCards = (array) => {
     $('#healthyDinos').html('');
@@ -23,7 +23,6 @@ const buildDinoCards = (array) => {
                     </tr>`
         )
         
-    
     });
 }
 

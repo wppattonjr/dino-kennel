@@ -85,7 +85,7 @@ const dinoData = [
     age: 67,
     owner: 'Logan',
     adventures: [],
-    health: 42,
+    health: 77,
     imageUrl: 'assets/images/Gallimimus.png'
     },
 
@@ -115,7 +115,7 @@ const dinoData = [
     age: 44,
     owner: 'Daniel',
     adventures: [],
-    health: 55,
+    health: 80,
     imageUrl: 'assets/images/Mosasaurus.png'
     },
 
@@ -223,7 +223,34 @@ const adventures = [
       }
 ];
 
-/* const getHealthyDinos = () => { */
+const getHealthyDinos = dinoData.filter((dino) => {
+    return dino.health >= 75
+});
 
+console.log(getHealthyDinos);
 
-export { dinoData };
+const getSickDinos = dinoData.filter ((dino) => {
+    return dino.health < 75 && dino.health > 0
+})
+console.log(getSickDinos);
+
+const getDeadDinos = dinoData.filter ((dino) => {
+    return dino.health === 0
+})
+
+console.log(getDeadDinos);
+
+const getDinos = (condition) => {
+    switch(condition) {
+        case 'healthy':
+            return getHealthyDinos;
+            break;
+        case 'sick':
+            return getSickDinos;
+            break;
+        case 'dead':
+            return getDeadDinos;
+    }
+}
+
+export { getDinos };
