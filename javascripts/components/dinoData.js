@@ -223,17 +223,9 @@ const adventures = [
       }
 ];
 
+const kennel = [];
+const hospital = [];
+const graveyard = [];
 
 
-
-/*  const getDinos = (condition) => {
-    switch(condition) {
-          case 'sick':
-            return getSickDinos;
-            break;
-        case 'dead':
-            return getDeadDinos;
-    }
-}  */
-
-export {  dinoData };
+export {  dinoData, adventures, kennel, hospital, graveyard };

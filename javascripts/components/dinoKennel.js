@@ -1,4 +1,4 @@
-import { dinoData } from './dinoData.js'
+import { dinoData, kennel } from './dinoData.js'
 
 const getHealthyDinos = dinoData.filter((dino) => {
     return dino.health >= 75
@@ -15,6 +15,11 @@ const getDeadDinos = dinoData.filter ((dino) => {
 });
 console.log(getDeadDinos)
 
+/* const healthyDinosToKennel = (data) => {
+    kennel.push(getHealthyDinos)
+    return healthyDinosToKennel
+}; */
+
 const buildHealthyDinoCards = (data) => {
     $('#healthyDinos').html('');
     data.forEach(dinos => {
@@ -27,24 +32,16 @@ const buildHealthyDinoCards = (data) => {
             <div class="progress">
             <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
             </div>
-            <div class="row">
-                <div class ="col">
-                <button type="button" class="btn btn-outline-dark">Feed</button>
-                </div>
-                <div class ="col">
-                <button type="button" class="btn btn-outline-dark">Adventure</button>
-                </div>
-                <div class ="col">
-                <button type="button" class="btn btn-outline-dark">View</button>
-                </div>
-                <div class ="col">
-                <button type="button" class="btn btn-outline-dark">Delete</button>
-                </div>
-            </div>
-
-            </div>`
-
+            <div class="card-buttons">
+                <button type="button" class="btn btn-outline-primary">Pet</button>
+                <button type="button" class="btn btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-outline-success">Feed</button>
+                <button type="button" class="btn btn-outline-danger">Delete</button>
+                <button type="button" class="btn btn-outline-warning">Adventure</button>
+                </div>`
         )
+
+        
     
     });
 }
@@ -61,21 +58,14 @@ const buildSickDinoCards = (data) => {
                 <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                 </div>
-                <div class="row">
-                    <div class ="col">
-                    <button type="button" class="btn btn-outline-dark">Feed</button>
-                    </div>
-                    <div class ="col">
-                    <button type="button" class="btn btn-outline-dark">Adventure</button>
-                    </div>
-                    <div class ="col">
-                    <button type="button" class="btn btn-outline-dark">View</button>
-                    </div>
-                    <div class ="col">
-                    <button type="button" class="btn btn-outline-dark">Delete</button>
-                    </div>
-                </div>
+                <div class="card-buttons">
+                <button type="button" class="btn btn-outline-primary">Pet</button>
+                <button type="button" class="btn btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-outline-success">Feed</button>
+                <button type="button" class="btn btn-outline-danger">Delete</button>
+                <button type="button" class="btn btn-outline-warning">Adventure</button>
                 </div>`
+                
         )
         
     
@@ -94,20 +84,38 @@ const buildDeadDinoCards = (data) => {
                 <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                 </div>
-                <div class="row">
-                    <div class ="col">
-                    <button type="button" class="btn btn-outline-dark">Feed</button>
-                    </div>
-                    <div class ="col">
-                    <button type="button" class="btn btn-outline-dark">Adventure</button>
-                    </div>
-                    <div class ="col">
-                    <button type="button" class="btn btn-outline-dark">View</button>
-                    </div>
-                    <div class ="col">
-                    <button type="button" class="btn btn-outline-dark">Delete</button>
-                    </div>
-                </div>
+                <div class="card-buttons">
+                <button type="button" class="btn btn-outline-primary">Pet</button>
+                <button type="button" class="btn btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-outline-success">Feed</button>
+                <button type="button" class="btn btn-outline-danger">Delete</button>
+                <button type="button" class="btn btn-outline-warning">Adventure</button>
+                </div>`
+                
+        )
+        
+    
+    });
+}
+
+const addDinos = (data) => {
+    $('#healthyDinos').html('');
+    data.forEach(dinos => {
+        $('#healthyDinos').append(
+            `<div class="card" "mx-auto" style="width: 18rem;">
+            <img src="${dinos.imageUrl}" class="card-img-top" alt="image of dino">
+            <div class="card-body">
+                <h5>${dinos.name}</h5>
+            </div>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+            <div class="card-buttons">
+                <button type="button" class="btn btn-outline-primary">Pet</button>
+                <button type="button" class="btn btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-outline-success">Feed</button>
+                <button type="button" class="btn btn-outline-danger">Delete</button>
+                <button type="button" class="btn btn-outline-warning">Adventure</button>
                 </div>`
         )
     
@@ -115,5 +123,4 @@ const buildDeadDinoCards = (data) => {
 }
 
 
-
-export { buildHealthyDinoCards,buildSickDinoCards, buildDeadDinoCards, getHealthyDinos, getSickDinos, getDeadDinos }
+export { buildHealthyDinoCards,buildSickDinoCards, buildDeadDinoCards, addDinos, getHealthyDinos, getSickDinos, getDeadDinos }
