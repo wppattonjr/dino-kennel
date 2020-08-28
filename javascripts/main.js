@@ -1,18 +1,17 @@
 import { dinoData } from './components/dinoData.js';
-import { buildDinoCards } from './components/dinoKennel.js';
+import { buildHealthyDinoCards, buildSickDinoCards, buildDeadDinoCards, getHealthyDinos, getSickDinos, getDeadDinos } from './components/dinoKennel.js';
 
 
 
 
 const init = () => {
-    buildDinoCards(dinoData);
+    buildHealthyDinoCards(getHealthyDinos);
+    buildSickDinoCards(getSickDinos);
+    buildDeadDinoCards(getDeadDinos);
   
 };
 
 init();
-
-
-
 
 
 
