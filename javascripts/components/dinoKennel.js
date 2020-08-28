@@ -1,8 +1,20 @@
-import { getDinos } from './dinoData.js'
+import { dinoData } from './dinoData.js'
 
-const buildDinoCards = (array) => {
+const getHealthyDinos = dinoData.filter((dino) => {
+    return dino.health >= 75
+});
+
+const getSickDinos = dinoData.filter ((dino) => {
+    return dino.health < 75 && dino.health > 0
+});
+
+const getDeadDinos = dinoData.filter ((dino) => {
+    return dino.health === 0
+});
+
+const buildDinoCards = (data) => {
     $('#healthyDinos').html('');
-    array.forEach(dinos => {
+    data.forEach(dinos => {
         $('#healthyDinos').append(
             `<div class="card" style="width: 18rem;">
             <img src="${dinos.imageUrl}" class="card-img-top" alt="image of dino">
@@ -22,7 +34,7 @@ const buildDinoCards = (array) => {
                         <th><button type="button" class="btn btn-outline-info">Info</button></th>
                     </tr>`
         )
-        
+    
     });
 }
 
