@@ -14,13 +14,51 @@
           Dinosaur Kennel
         </a>
       </nav>
-
-      <div class="card m-3 justify-content-center" id="dinoForm">
+      <!----- Form Modal ----->
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Add Dino
+              </button>
+            </h5>
+          </div>
       
-      </div>
-    
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        
+          <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="dino-name">Name</label>
+                <input type="txt" class="form-control" id="dinoName" placeholder="Enter Dino Name">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="dino-owner">Owner</label>
+                <input type="text" class="form-control" id="dinoOwner" placeholder="Enter Dino Owner">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="dino-age">Age</label>
+                <input type="number" class="form-control" id="dinoAge" placeholder="Enter Dino Age">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="dino-image">Image</label>
+                <input type="url" class="form-control" id="dinoImage" placeholder="Enter Dino Image URL">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="dino-type">Type</label>
+                <input type="text" class="form-control" id="dinoType" placeholder="Enter Dino Type">
+                </div>
+            </div>
+            <button type="button" id="formSubmitButton" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+            </div>
+            </div>
 
-    <div class="dinoKennel">
+    
         <h1>Kennel</h1>
         <div class="d-flex flex-wrap justify-content-center justify-content-between" id="healthyDinos">
         </div>
