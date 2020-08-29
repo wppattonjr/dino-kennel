@@ -1,24 +1,21 @@
 import { kennel } from './dinoData.js';
 import { addDinos } from './dinoKennel.js'
 
-let count = 17;
-
-const incrementalID = () => {
-    return ++count
+const randomId = () => {
+    const random = [Math.floor(Math.random() * 1000)];
+    return random;
 };
 
-console.log(incrementalID() );
-
 const addDinoSubmitButton = () => {
-    $('#formSubmitButton').on('click', (e) => {
-        const dinoName = $('#dino-name').val();
-        const dinoOwner = $('#dino-owner').val();
-        const dinoAge = $('#dino-age').val();
-        const dinoImage = $('#dino-image').val();
-        const dinoType = $('#dino-type').val();
+    $('#formSubmitButton').click(() => {
+        const dinoName = $('#dinoName').val();
+        const dinoOwner = $('#dinoOwner').val();
+        const dinoAge = $('#dinoAge').val();
+        const dinoImage = $('#dinoImage').val();
+        const dinoType = $('#dinoType').val();
 
         kennel.push({
-            id: incrementalID(),
+            id: randomId(),
             name: dinoName,
             type: dinoType,
             age: dinoAge,
@@ -27,21 +24,22 @@ const addDinoSubmitButton = () => {
             health: 100,
             imageUrl: dinoImage
         })
-
+                
         clearOutForm();
-        addDinos(kennel);
+        addDinos(kennel, 'kennel');
             
         })
-        console.log(addDinos(kennel))
+        
     };
 
     const clearOutForm = () => {
-        $('#dino-name').val('');
-        $('#dino-owner').val('');
-        $('#dino-age').val('');
-        $('#dino-image').val('');
-        $('#dino-type').val('');
+        $('#dinoName').val('');
+        $('#dinoOwner').val('');
+        $('#dinoAge').val('');
+        $('#dinoImage').val('');
+        $('#dinoType').val('');
     }
+
     
 
 export { addDinoSubmitButton }
