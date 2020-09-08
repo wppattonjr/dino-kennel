@@ -1,5 +1,5 @@
-import { kennel } from './dinoData.js';
-import { addDinos } from './dinoKennel.js'
+import { getDinos, dinoData } from './dinoData.js';
+import { showDinos } from './showDinos.js'
 
 const randomId = () => {
     const random = [Math.floor(Math.random() * 1000)];
@@ -14,23 +14,24 @@ const addDinoSubmitButton = () => {
         const dinoImage = $('#dinoImage').val();
         const dinoType = $('#dinoType').val();
 
-        kennel.push({
+        dinoData.push({
             id: randomId(),
             name: dinoName,
             type: dinoType,
             age: dinoAge,
             owner: dinoOwner,
+            placement: 'kennel',
             adventures: [],
             health: 100,
             imageUrl: dinoImage
         })
-                
+          
         clearOutForm();
-        addDinos(kennel, 'kennel');
-            
-        })
-        
-    };
+        showDinos(getDinos);
+    })
+};
+
+    
 
     const clearOutForm = () => {
         $('#dinoName').val('');
@@ -40,6 +41,5 @@ const addDinoSubmitButton = () => {
         $('#dinoType').val('');
     }
 
-    
 
 export { addDinoSubmitButton }
