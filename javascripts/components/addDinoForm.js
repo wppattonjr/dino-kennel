@@ -1,11 +1,6 @@
 import { getDinos, dinoData } from './dinoData.js';
 import { showDinos } from './showDinos.js'
 
-const randomId = () => {
-    const random = [Math.floor(Math.random() * 1000)];
-    return random;
-};
-
 const addDinoSubmitButton = () => {
     $('#formSubmitButton').click(() => {
         const dinoName = $('#dinoName').val();
@@ -15,7 +10,7 @@ const addDinoSubmitButton = () => {
         const dinoType = $('#dinoType').val();
 
         dinoData.push({
-            id: randomId(),
+            id: dinoData.length + 1,
             name: dinoName,
             type: dinoType,
             age: dinoAge,
@@ -25,9 +20,9 @@ const addDinoSubmitButton = () => {
             health: 100,
             imageUrl: dinoImage
         })
-          
+        
         clearOutForm();
-        showDinos(getDinos);
+        showDinos(getDinos());
     })
 };
 

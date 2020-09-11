@@ -1,6 +1,6 @@
 const dinoData = [
     {
-    id: 'dino1',
+    id: 1,
     name: 'Fluffy',
     type: 'T Rex',
     age: 50,
@@ -12,7 +12,7 @@ const dinoData = [
   },
 
     {
-    id: 'dino2',
+    id: 2,
     name: "Donna",
     type: 'Ankylosaurus',
     age: 100,
@@ -24,7 +24,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino3',
+    id: 3,
     name: 'Ned',
     type: 'Apatosaurus',
     age: 96,
@@ -36,7 +36,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino4',
+    id: 4,
     name: 'Harry',
     type: 'Baryonyx',
     age: 29,
@@ -48,7 +48,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino5',
+    id: 5,
     name: "Branch",
     type: 'Blue',
     age: 90,
@@ -60,7 +60,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino6',
+    id: 6,
     name: 'Poppy',
     type: 'Brachiosaurus',
     age: 20,
@@ -72,7 +72,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino7',
+    id: 7,
     name: 'Cooper',
     type: 'Carnotaurus',
     age: 14,
@@ -84,7 +84,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino8',
+    id: 8,
     name: 'Barb',
     type: 'Dimorphodon',
     age: 78,
@@ -96,7 +96,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino9',
+    id: 9,
     name: 'Tink',
     type: 'Gallimimus',
     age: 67,
@@ -108,7 +108,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino10',
+    id: 10,
     name: 'Biggie',
     type: 'Indominus',
     age: 38,
@@ -120,7 +120,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino11',
+    id: 11,
     name: 'Prince D',
     type: 'Indoraptor',
     age: 33,
@@ -132,7 +132,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino12',
+    id: 12,
     name: 'Hickory',
     type: 'Mosasaurus',
     age: 44,
@@ -144,7 +144,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino13',
+    id: 13,
     name: 'Chenille',
     type: 'Pteranodon',
     age: 78,
@@ -156,7 +156,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino14',
+    id: 14,
     name: 'Satin',
     type: 'Sinoceratops',
     age: 67,
@@ -168,7 +168,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino15',
+    id: 15,
     name: 'Tresillo',
     type: 'Stegosaurus',
     age: 59,
@@ -180,7 +180,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino16',
+    id: 16,
     name: 'King Quincy',
     type: 'Stygimoloch',
     age: 30,
@@ -192,7 +192,7 @@ const dinoData = [
     },
 
     {
-    id: 'dino17',
+    id: 17,
     name: 'Delta Dawn',
     type: 'Triceratops',
     age: 48,
