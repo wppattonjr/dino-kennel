@@ -19,6 +19,16 @@ const makeDinoCard = (item, index) => {
           </div>
           <div class="progress-bar" id="progress-bar-${item.id}" role="progressbar" style="width: ${item.health}%" aria-valuenow="${item.health}" aria-valuemin="0" aria-valuemax="100">${item.health}%</div>
          </div>
+         <table class="table">
+            <thead class="table-head">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Date</th>
+                <th scope="col">Type</th>         
+            </tr>
+            </thead>
+                <tbody id="adventures-${index}"></tbody>
+         </table>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>

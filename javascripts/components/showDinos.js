@@ -1,4 +1,5 @@
-import { petDinoButton, feedDinoButton, deleteDinos } from './buttons.js';
+import { petDinoButton, feedDinoButton, deleteDinos, dinoAdventure } from './buttons.js';
+import { dinoAdventureInfo } from './dinoAdventures.js';
 import { makeDinoCard } from './makeDinoCard.js'
 
 const showDinos = (array) => {
@@ -16,6 +17,8 @@ const showDinos = (array) => {
         petDinoButton(index, item, array);
         feedDinoButton(index,item, array );
         deleteDinos (index, array);
+        dinoAdventure (index, item, array);
+        dinoAdventureInfo(item, index);
         
     });
 };
