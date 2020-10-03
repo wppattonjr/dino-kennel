@@ -1,6 +1,14 @@
-h1 { text-align: center;};
+* {
+    font-family: 'Rakkas', cursive;
+}
+
+body {
+    background-color: darkolivegreen;
+}
+
+h1 { text-align: center};
 
 .dinoHospital {
     outline-style: solid;
-    outline-color: red;
+    background-color: red;
 }
