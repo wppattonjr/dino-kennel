@@ -1,17 +1,5 @@
 const dinoData = [
     {
-    id: 1,
-    name: 'Fluffy',
-    type: 'T Rex',
-    age: 50,
-    owner: 'Phillip',
-    placement: 'hospital',
-    adventures: [],
-    health: 22,
-    imageUrl: 'assets/images/T-Rex.png'
-  },
-
-    {
     id: 2,
     name: "Donna",
     type: 'Ankylosaurus',

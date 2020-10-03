@@ -3,12 +3,36 @@
 }
 
 body {
-    background-color: darkolivegreen;
+    background-color: white;
 }
 
-h1 { text-align: center};
+.card {
+    border-radius: 30px;
+}
 
+.kennel {
+    background-color: darkolivegreen;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
 .dinoHospital {
-    outline-style: solid;
     background-color: red;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.dinoGraveyard {
+    background-color: black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.dinoGraveyard h1 {
+    color: white;
 }
