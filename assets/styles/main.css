@@ -1,0 +1,38 @@
+* {
+    font-family: 'Rakkas', cursive;
+}
+
+body {
+    background-color: white;
+}
+
+.card {
+    border-radius: 30px;
+}
+
+.kennel {
+    background-color: darkolivegreen;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+.dinoHospital {
+    background-color: red;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.dinoGraveyard {
+    background-color: black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.dinoGraveyard h1 {
+    color: white;
+}

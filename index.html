@@ -5,9 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinosaur Kennel</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
 </head>
 <body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          <h1>Dinosaur Kennel</h1>
+        </a>
+      </nav>
+      <!----- Form Modal ----->
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               <div id="add-dino-link"><h2>Add Dino</h2></div> 
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        
+          <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="dino-name">Name</label>
+                <input type="txt" class="form-control" id="dinoName" placeholder="Enter Dino Name">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="dino-owner">Owner</label>
+                <input type="text" class="form-control" id="dinoOwner" placeholder="Enter Dino Owner">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="dino-age">Age</label>
+                <input type="number" class="form-control" id="dinoAge" placeholder="Enter Dino Age">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="dino-image">Image</label>
+                <input type="url" class="form-control" id="dinoImage" placeholder="Enter Dino Image URL">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="dino-type">Type</label>
+                <input type="text" class="form-control" id="dinoType" placeholder="Enter Dino Type">
+                </div>
+            </div>
+            <button type="button" id="formSubmitButton" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+            </div>
+            </div>
+
+    <div class="kennel">
+        <h1>Kennel</h1>
+        <div class="d-flex flex-wrap justify-content-center justify-content-between" id="healthyDinos">
+        </div>
+    </div>
+
+    <div class="dinoHospital">
+        <h1>Hospital</h1>
+        <div class="d-flex flex-wrap justify-content-center justify-content-between" id="sickDinos">
+        </div>
+    </div>
+
+    <div class="dinoGraveyard">
+        <h1>Graveyard</h1>
+        <div class="d-flex flex-wrap justify-content-center justify-content-between" id="deadDinos">
+        </div>
+    </div>
+
+
+
+      
 
 
     <script
@@ -16,6 +88,6 @@
     crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script type="module" src="./javascripts/main.js"></script>
 </body>
 </html>
