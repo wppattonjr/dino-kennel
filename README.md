@@ -17,3 +17,6 @@ Each interaction with the dino will result in energy being taken away from the d
 ## Build Status
 
 
+
+![Dino Kennel Screen Shot](https://user-images.githubusercontent.com/63669713/94998270-3fd2ee00-0576-11eb-8dd6-11b4fa97bd0f.png)
+
