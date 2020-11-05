@@ -1,3 +1,9 @@
+# Deploy Status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/52f0adfb-5585-4c92-badd-6b7a12f45076/deploy-status)](https://app.netlify.com/sites/wendellp-dinokennel/deploys)
+
+[Dino Kennel Live Site](https://wendellp-dinokennel.netlify.app)
+
 # Dino Kennel
 This was is the cohorts milestone project for cohort EC13. It is a single page application that allows the user to interact with dinosaurs. The user can do the following:
 
